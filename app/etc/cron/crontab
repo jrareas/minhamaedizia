@@ -1,0 +1,1 @@
+* * * * * root . $HOME/.profile; /usr/local/bin/php /app/bin/magento cron:run >> /app/var/log/magento.cron.log 2>&1
