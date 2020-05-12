@@ -1,4 +1,4 @@
-FROM gcr.io/minhamaedizia/magento:latest
+FROM jrareas/magento
 
 # Make sure an .env file exists before you run docker-compose up
 

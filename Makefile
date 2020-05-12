@@ -1,7 +1,7 @@
 # Defaults settings (when building locally)
 SHELL := /bin/sh
 
-GCP_REGISTRY=gcr.io/minhamaedizia
+GCP_REGISTRY=jrareas
 IMAGE_NAME=$(GCP_REGISTRY)/minhamaedizia
 
 -include variables.sh
@@ -17,7 +17,7 @@ help:	 ## Show this help.
 build:   ## build the image
 	#unzip -o -P $(ZIP_SECRET) variables.zip
 	#include variables.sh
-	docker build \
+	docker build --no-cache\
 		--build-arg magento_db_host=$(magento_db_host) \
 		--build-arg magento_db_name=$(magento_db_name) \
 		--build-arg magento_db_user=$(magento_db_user) \
